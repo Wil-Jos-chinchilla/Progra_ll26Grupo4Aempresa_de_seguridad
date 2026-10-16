@@ -200,9 +200,9 @@ public class ClienteForm extends JFrame {
             return false;
         }
 
-        // DPI: 5 dígitos
-        if (!dpi.matches("\\d{5}")) {
-            advertir("El DPI debe tener exactamente 5 dígitos numéricos.", txtDpi);
+        // DPI: 13 dígitos
+        if (!dpi.matches("\\d{13}")) {
+            advertir("El DPI debe tener exactamente 13 dígitos numéricos.", txtDpi);
             return false;
         }
 
@@ -214,10 +214,10 @@ public class ClienteForm extends JFrame {
             }
         }
 
-        // Teléfono 4 dígitos
+        // Teléfono 8 dígitos
         String telefono = txtTelefono.getText().trim();
-        if (!telefono.isEmpty() && !telefono.matches("\\d{4}")) {
-            advertir("El teléfono debe tener 4 dígitos numéricos.", txtTelefono);
+        if (!telefono.isEmpty() && !telefono.matches("\\d{8}")) {
+            advertir("El teléfono debe tener 8 dígitos numéricos.", txtTelefono);
             return false;
         }
         // Correo (opcional): formato básico

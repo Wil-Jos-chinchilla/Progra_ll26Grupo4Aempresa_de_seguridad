@@ -1,3 +1,4 @@
+
 package com.mycompany.empresa_de_seguridad.ui;
 
 import com.mycompany.empresa_de_seguridad.jpacontroller.ContratoJpaController;

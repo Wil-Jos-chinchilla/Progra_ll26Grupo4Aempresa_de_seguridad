@@ -11,7 +11,7 @@ public class MainSeg extends JFrame {
     public MainSeg() {
         setTitle("Empresa de Seguridad - Menú Principal");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(420, 520);
+        setSize(420, 600);
         setLocationRelativeTo(null);
         setResizable(false);
 
@@ -34,7 +34,9 @@ public class MainSeg extends JFrame {
         panelBotones.add(crearBoton("Puestos de Servicio", e -> abrirModulo("Puestos de Servicio")));
         panelBotones.add(crearBoton("Turnos", e -> abrirModulo("Turnos")));
         panelBotones.add(crearBoton("Asistencias", e -> abrirModulo("Asistencias")));
-        panelBotones.add(crearBoton("Rondas y Puntos de Control", e -> abrirModulo("Rondas")));
+        panelBotones.add(crearBoton("Puntos de Control", e -> abrirModulo("Puntos de Control")));
+        panelBotones.add(crearBoton("Rondas", e -> abrirModulo("Rondas")));
+        panelBotones.add(crearBoton("Registro de Rondas", e -> abrirModulo("Registro de Rondas")));
         panelBotones.add(crearBoton("Incidentes", e -> abrirModulo("Incidentes")));
         panelBotones.add(crearBoton("Facturación", e -> abrirModulo("Facturación")));
         panelBotones.add(crearBoton("Usuarios y Roles", e -> abrirModulo("Usuarios")));
@@ -79,6 +81,15 @@ public class MainSeg extends JFrame {
                 break;
             case "Asistencias":
                 new AsistenciaForm().setVisible(true);
+                break;
+            case "Puntos de Control":
+                new PuntoControlForm().setVisible(true);
+                break;
+            case "Rondas":
+                new RondaForm().setVisible(true);
+                break;
+            case "Registro de Rondas":
+                new RegistroPuntoControlForm().setVisible(true);
                 break;
             case "Incidentes":
                 new IncidenteForm().setVisible(true);
