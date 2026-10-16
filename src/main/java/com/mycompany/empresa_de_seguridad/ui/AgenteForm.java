@@ -62,7 +62,7 @@ public class AgenteForm extends JFrame {
 
     private void initComponents() {
         setTitle("Gestión de Agentes");
-        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); // no cierra toda la app
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); 
         setSize(900, 550);
         setLocationRelativeTo(null);
         setLayout(new BorderLayout(10, 10));
