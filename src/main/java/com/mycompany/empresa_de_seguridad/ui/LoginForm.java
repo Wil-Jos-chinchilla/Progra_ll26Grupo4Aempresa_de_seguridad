@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * Inicio de sesion.
  */
-public class LoginForm extends JFrame {
+public class LoginForm extends JFrame {//comv clss a swi
 
     private static final String PERSISTENCE_UNIT_NAME = "empresa_seguridadPU";
     private JTextField txtUsuario;
